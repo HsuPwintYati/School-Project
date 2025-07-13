@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Nav bar */
@@ -13,6 +14,7 @@ body {
     background-color: #37083c;
     font-family: "Roboto", sans-serif;
     color: #fff;
+    /* height: 1000vh; */
 }
 
 header {
@@ -25,7 +27,8 @@ header .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 100px;
+    padding: 10px 100px;
+    background-color: #37083c;
 }
 
 a {
@@ -33,11 +36,6 @@ a {
     color: #fff;
     cursor: pointer;
     transition: 0.5s;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 900;
 }
 
 ul li {
@@ -100,23 +98,156 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 150px;
+    padding: 85px 150px 0 150px;
 }
 
 .home img {
     width: 480px;
 }
 
-.home-content h1 {
+.home-contents h1 {
     font-size: 3.8rem;
     line-height: 80px;
     margin-bottom: 25px;
 }
 
-.home-content p {
-    width: 450px;
+.home-contents p {
+    width: 500px;
     line-height: 25px;
     text-align: justify;
     font-size: 0.95rem;
-    opacity: 0.6;
+    opacity: 0.7;
+}
+
+/* Roadmaps */
+.roadmaps {
+    padding: 80px 150px 0 150px;
+}
+
+.title-content {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+
+}
+
+.roadmaps-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.roadmaps-card {
+    min-width: 200px;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(79, 47, 87, 0.5);
+    box-shadow: 3px 3px 10px #00000050;
+    border-left: 1px solid #eb6448;
+    border-radius: 10px;
+    transform: 0.8s;
+}
+
+.roadmaps-card img {
+    width: 62px;
+    padding: 26px 0 5px 0;
+}
+
+.roadmaps-card h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.roadmaps-card:hover {
+    transform: scale(1.1);
+}
+
+/* Why Roadmap */
+.why-roadmap {
+    padding: 110px 150px 0 150px;
+}
+
+.why-roadmap h1 {
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-card {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.why-card h4 {
+    background-color: #164e63;
+    width: 500px;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #22d3ee;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: auto;
+}
+
+/* Contact */
+.contact{
+    padding: 85px 150px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.contact .icon {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+.icon i {
+  margin-right: 3px;
+  border: 2px solid #eb6448;
+  padding: 3px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.icon i:hover {
+  background-color: #eb6448;
+  color: #fff;
+  cursor: pointer;
+}
+form {
+    width: 500px;
+}
+.contact input{
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 22px;
+    background-color: rgba(79, 47, 87, 0.5);
+    box-shadow: 3px 3px 10px #00000050;
+    border-left: 1px solid #eb6448;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #fff;
+}
+.contact-btn{
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Footer */
+footer p {
+  background-color: #eb6448;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 6px;
 }
