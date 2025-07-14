@@ -14,7 +14,6 @@ body {
     background-color: #37083c;
     font-family: "Roboto", sans-serif;
     color: #fff;
-    /* height: 1000vh; */
 }
 
 header {
@@ -93,7 +92,7 @@ ul li {
     transition: 0.5s;
 }
 
-/* Cover */
+/* Home */
 .home {
     display: flex;
     justify-content: space-between;
@@ -102,13 +101,13 @@ ul li {
 }
 
 .home img {
-    width: 480px;
+    width: 490px;
 }
 
 .home-contents h1 {
     font-size: 3.8rem;
-    line-height: 80px;
-    margin-bottom: 25px;
+    line-height: 85px;
+    margin-bottom: 12px;
 }
 
 .home-contents p {
@@ -117,6 +116,7 @@ ul li {
     text-align: justify;
     font-size: 0.95rem;
     opacity: 0.7;
+    margin-bottom: 35px;
 }
 
 /* Roadmaps */
@@ -135,16 +135,15 @@ ul li {
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 25px;
 }
 
 .roadmaps-card {
-    min-width: 200px;
+    width: 200px;
     height: 150px;
     text-align: center;
-    background-color: rgba(79, 47, 87, 0.5);
+    background-color: #4e0a61;
     box-shadow: 3px 3px 10px #00000050;
-    border-left: 1px solid #eb6448;
     border-radius: 10px;
     transform: 0.8s;
 }
@@ -163,15 +162,55 @@ ul li {
     transform: scale(1.1);
 }
 
-/* Why Roadmap */
-.why-roadmap {
-    padding: 110px 150px 0 150px;
+/* Overviews */
+.overview {
+    padding: 90px 150px 0 150px;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
 }
 
-.why-roadmap h1 {
+.why-roadmap h1,
+.overview h1 {
     font-size: 3.8rem;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.overview ul {
+    font-size: 1.1rem;
+}
+
+.overview ul li {
+    background-color: rgba(79, 47, 87, 0.5);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 1px solid #eb6448;
+    box-shadow: 3px 3px 10px #00000050;
+    margin-bottom: 13px;
+    line-height: 1.5em;
+    transition: 0.5s;
+}
+
+.overview b {
+    color: #eb6448;
+}
+
+.overview ul li:hover {
+    transform: scale(1.01);
+}
+
+
+/* Why Roadmap */
+.why-roadmap {
+    padding: 80px 150px 0 150px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .why-card {
@@ -181,8 +220,8 @@ ul li {
 
 .why-card h4 {
     background-color: #164e63;
-    width: 500px;
-    padding: 20px 0;
+    max-width: 230px;
+    padding: 20px 20px;
     border-radius: 10px;
     border: 1px solid #22d3ee;
     font-size: 1.1rem;
@@ -191,42 +230,49 @@ ul li {
 }
 
 /* Contact */
-.contact{
+.contact {
     padding: 85px 150px;
 }
-.contact-container{
+
+.contact-container {
     display: flex;
     justify-content: space-between;
 }
+
 .logo {
     font-size: 1.5rem;
     font-weight: 900;
 }
+
 .contact .icon {
-  display: flex;
-  flex-direction: row;
-  gap: 3px;
-  font-size: 1.8rem;
-  margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    font-size: 1.8rem;
+    margin-top: 20px;
 }
+
 .icon i {
-  margin-right: 3px;
-  border: 2px solid #eb6448;
-  padding: 3px;
-  border-radius: 50%;
-  transition: 0.5s;
+    margin-right: 3px;
+    border: 2px solid #eb6448;
+    padding: 3px;
+    border-radius: 50%;
+    transition: 0.5s;
 }
+
 .icon i:hover {
-  background-color: #eb6448;
-  color: #fff;
-  cursor: pointer;
+    background-color: #eb6448;
+    color: #fff;
+    cursor: pointer;
 }
+
 form {
     width: 500px;
 }
-.contact input{
-    width: 500px;
-    padding: 20px;
+
+.contact input {
+    width: 100%;
+    padding: 18px;
     margin-bottom: 22px;
     background-color: rgba(79, 47, 87, 0.5);
     box-shadow: 3px 3px 10px #00000050;
@@ -237,17 +283,71 @@ form {
     font-weight: 600;
     color: #fff;
 }
-.contact-btn{
+
+.contact-btn {
     margin-top: 20px;
     text-align: right;
 }
 
 /* Footer */
 footer p {
-  background-color: #eb6448;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 6px;
+    background-color: #eb6448;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px;
+}
+
+/* Responsive */
+@media (max-width: 1384px) {
+    .home .disable {
+        display: none;
+    }
+
+    .home-contents p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1245px) {
+    .home .homeImg {
+        display: none;
+    }
+    .home .disable {
+        display: inline;
+    }
+
+    .home {
+        justify-content: center;
+        text-align: center;
+        padding-top: 75px;
+    }
+
+    .home-contents h1 {
+        line-height: 75px;
+    }
+
+    .roadmaps {
+        padding-top: 95px;
+    }
+
+    .roadmaps-card {
+        width: 180px;
+    }
+
+    .roadmaps-container {
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1050px) {
+    form {
+        width: 300px;
+    }
+
+    .contact input {
+        width: 100%;
+    }
 }
