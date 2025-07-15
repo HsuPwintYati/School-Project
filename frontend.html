@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Roadmap for University Students</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/home-style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="text-slate-300 antialiased">
+    <!-- Nav bar start -->
+    <header>
+        <div class="nav-bar">
+            <a href="index.html"><img src="home-images/logo.png" alt="logo" style="width: 80px" /></a>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#roadmaps" class="active">Roadmaps</a></li>
+                    <li><a href="index.html#overview">Overviews</a></li>
+                    <li><a href="team.html">Our team</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Nav bar end -->
+
+    <main class="container mx-auto px-4 md:px-8 py-16">
+        <!-- Hero Section -->
+        <section class="text-center mb-24">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white">
+                Frontend Roadmap for Students
+            </h2>
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
+                Your step-by-step guide to becoming a Frontend Developer. Start with the
+                fundamentals and build your way up.
+            </p>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="roadmap" class="relative timeline-container pb-12 overflow-auto">
+            <!-- Phase 1: HTML & CSS -->
+            <div class="timeline-item left">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                1. HTML & CSS
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/HTML.png" alt="HTML Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                HTML Basics
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-green-500/20 text-green-300 px-2 py-1 rounded-full">Foundation</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/CSS.png" alt="CSS Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                CSS Fundamentals
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Responsive copy.png" alt="Responsize copy Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Responsive Design
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Flexbox.png" alt="Flexbox Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Flexbox & Grid
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 2: JavaScript  -->
+            <div class="timeline-item right">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                2. JavaScript
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/JS.png" alt="JS Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                JavaScript Basics
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                DOM Manipulation
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                ES6+ Features
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                Async JS (Promises, Async/Await)
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Phase 3: Version Control  -->
+            <div class="timeline-item left">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                3. Version Control (Git)
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/GitHub.png" alt="GitHub Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                GitHub
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/GitLab.png" alt="GitLab Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                GitLab
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/BitBucket.png" alt="BitBucket Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Bitbucket
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 4: Package Managers -->
+            <div class="timeline-item right">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                4. Package Managers
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/NPM.png" alt="NPM Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                NPM
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Yarn.png" alt="Yarn Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Yarn
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 5: JavaScript Frameworks -->
+            <div class="timeline-item left">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                5. JavaScript Frameworks
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/React.png" alt="React Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                React
+                            </span>
+                            <span class="text-xs font-bold bg-orange-500/20 text-orange-300 px-2 py-1 rounded-full">Must
+                                Have</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/vue.png" alt="Vue Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Vue.js
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Angular.png" alt="Angular Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Angular
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 6: CSS Frameworks & Libraries -->
+            <div class="timeline-item right">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                6. CSS Frameworks & Libraries
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Tailwind-CSS.png" alt="Tailwind-CSS Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Tailwind CSS
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Bootstrap.png" alt="Bootstrap Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Bootstrap
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 7: Build Tools -->
+            <div class="timeline-item left">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                7. Build Tools
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Webpack.png" alt="Webpack Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Webpack
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Vite.png" alt="Vite Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Vite
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Phase 8: Testing -->
+            <div class="timeline-item right">
+                <div class="timeline-card animated-card content-card card-hover rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center mb-3">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">
+                                8. Testing
+                            </h3>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/Vitest.svg" alt="Vitest Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Vitest
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="flex items-center text-slate-200">
+                                <img src="icons/jest.png" alt="Jest Icon"
+                                    style="width: 24px; height: 24px; margin-right: 8px" />
+                                Jest
+                            </span>
+                            <span
+                                class="text-xs font-bold bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full">Optional</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Resources Section -->
+        <section id="resources" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                    Recommended Courses
+                </h2>
+                <p class="text-lg text-slate-400 mt-2">
+                    Curated resources to master each skill on the roadmap.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- HTML & CSS -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-purple-800 border border-purple-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-terminal-window text-3xl text-purple-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">
+                            HTML & CSS
+                        </h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://www.w3schools.com/html/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-linux-logo"></i><span>HTML (w3schools)</span></a>
+                        <a href="https://www.w3schools.com/css/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-video"></i><span>CSS (w3schools)</span></a>
+                        <a href="https://www.tutorialspoint.com/html/index.htm" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-video"></i><span>HTML (Tutorialspoint)</span></a>
+                        <a href="https://www.tutorialspoint.com/css/index.htm" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-video"></i><span>CSS (Tutorialspoint)</span></a>
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-video"></i><span>Flexbox & Grid (CSS-Tricks)</span></a>
+                        <a href="https://flexboxfroggy.com/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-video"></i><span>Flexbox Game (flexbox Froggy)</span></a>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-green-900 border border-green-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-arrows-clockwise text-3xl text-green-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">JavaScript</h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-user-circle-gear"></i><span>JavaScript (MDN)</span></a>
+                        <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-user-circle-gear"></i><span>JavaScript (w3schools)</span></a>
+                        <a href="https://www.tutorialspoint.com/javascript/index.htm" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-user-circle-gear"></i><span>JavaScript (Tutorialspoint)</span></a>
+                    </div>
+                </div>
+
+                <!-- Version Control (Git) Resources -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-blue-900 border border-blue-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-git-branch text-3xl text-blue-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">
+                            Version Control (Git)
+                        </h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://git-scm.com/book/en/v2" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-book-open"></i><span>Pro Git Book (Free)</span></a>
+                        <a href="https://lab.github.com/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-github-logo"></i><span>GitHub Learning Lab</span></a>
+                        <a href="https://www.freecodecamp.org/news/learn-git-and-github/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-code"></i><span>freeCodeCamp Git & GitHub</span></a>
+                        <a href="https://www.atlassian.com/git/tutorials" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-git-fork"></i><span>Atlassian Git Tutorials</span></a>
+                        <a href="https://learngitbranching.js.org/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-tree-structure"></i><span>Learn Git Branching (Interactive)</span></a>
+                    </div>
+                </div>
+
+                <!-- JavaScript Frameworks -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-yellow-900 border border-yellow-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-cloud text-3xl text-yellow-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">JavaScript Frameworks</h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://react.dev/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-amazon-logo"></i><span>React</span></a>
+                        <a href="https://vuejs.org/guide/introduction.html" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-amazon-logo"></i><span>Vue.js</span></a>
+                        <a href="https://angular.dev/overview" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-amazon-logo"></i><span>Angular</span></a>
+                    </div>
+                </div>
+                <!-- CSS Frameworks & Libraries -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-pink-900 border border-pink-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-cube text-3xl text-pink-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">
+                            CSS Frameworks & Libraries
+                        </h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://tailwindcss.com/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-docker-logo"></i><span>Tailwind CSS</span></a>
+                        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-docker-logo"></i><span>Bootstrap</span></a>
+                    </div>
+                </div>
+                <!-- Build Tools  -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-cyan-900 border border-cyan-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-chart-line text-3xl text-cyan-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">
+                            Build Tools
+                        </h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://webpack.js.org/guides/getting-started/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-docker-logo"></i><span>Webpack</span></a>
+                        <a href="https://vite.dev/guide/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-docker-logo"></i><span>Vite</span></a>
+                        <a href="https://www.youtube.com/watch?v=LQQ3CR2JTX8" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-docker-logo"></i><span>Vite Crash Course</span></a>
+                        <a href="https://www.youtube.com/watch?v=VAeRhmpcWEQ" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-docker-logo"></i><span>Vite Tutorial Video</span></a>
+                    </div>
+                </div>
+                <!-- Testing -->
+                <div
+                    class="resource-card animated-card card-hover p-6 rounded-lg shadow-lg bg-indigo-900 border border-indigo-400">
+                    <div class="flex items-center mb-4">
+                        <i class="ph-code-block text-3xl text-indigo-200 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-white">
+                            Testing
+                        </h3>
+                    </div>
+                    <div class="space-y-3 text-slate-200">
+                        <a href="https://vitest.dev/guide/" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-terraform-logo"></i><span>Vitest</span></a>
+                        <a href="https://jestjs.io/docs/getting-started" target="_blank"
+                            class="flex items-center space-x-2 hover:text-white transition-colors"><i
+                                class="ph-terraform-logo"></i><span>Jest</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-12">
+        <p class="text-slate-400">
+            &copy; 2024 Zego/Brand. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
